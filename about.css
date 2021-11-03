@@ -1,0 +1,307 @@
+@font-face {
+  src: url("LEMONMILK-Light.otf");
+  font-family:lemon milk light;
+}
+@font-face {
+  src: url("CaviarDreams.ttf");
+  font-family:caviar dreams;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  padding: 20px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.932); 
+}
+.texts{
+  margin-left: 150px;
+  font-family: lemon milk light;
+}
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block; 
+  color: #F5F5F5;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  
+}
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #C0B3A0;
+  color: #0F1626;
+  transform: translateX(-10px);
+  transition: 0.5s;
+}
+
+/* Active/current link */
+.navbar a.active {
+  color:  #E14658;
+}
+
+/* Main column */
+.main {   
+  padding: 335px ;
+  background-image: url("bg1.jpg");
+  background-size: cover;
+}
+
+.image img{
+  position: absolute;
+  left: 200px;
+  top: 250px;
+  border-style: solid;
+  border-color:#E14658;
+  border-width: 4px;
+}
+.logo img{
+  float: right;
+  margin-right: 200px;
+}
+
+.Aboutme{
+  font-family:lemon milk light;
+  font-size: 54px;
+  position: absolute;
+  left: 200px;
+  top:70px;
+  font-weight: bolder;
+  color:#FF433D;
+}
+.name{
+  font-size: 28px;
+  font-family:lemon milk light;
+  position: absolute;
+  bottom: 395px;
+  left: 35%;
+  color: #E14658;
+}
+.desc{
+  position: absolute;
+  bottom: 330px;
+  left: 35%;
+  font-family:caviar dreams;
+  color:#F5F5F5;
+}
+.name2{
+    position:absolute;
+    top: 300px;
+    right: 350px;
+    float: right;
+    font-family: lemon milk light;
+    bottom: 300px;
+    font-size: 28px;
+    color: #E14658;
+}
+.name21{
+  position:absolute;
+  top: 350px;
+  right: 350px;
+  float: right;
+  font-family: lemon milk light;
+  font-size: 28px;
+  color: #E14658;
+}
+.desc2{
+    position:absolute;
+    right: 350px;
+    top: 425px;  
+    font-family:caviar dreams;
+    color:#F5F5F5;
+}
+.desc21{
+  position:absolute;
+  right: 350px;
+  top: 460px; 
+  font-family:caviar dreams;
+  color:#F5F5F5;
+}
+.name3{
+  font-size: 28px;
+  font-family:lemon milk light;
+  position: absolute;
+  bottom: 250px;
+  left: 35%;
+  font-weight: bold;
+  color: #E14658;
+}
+.info{
+  position: absolute;
+  bottom: 85px;
+  left: 35%;
+  color: #C0B3A0;
+  font-family: caviar dreams;
+  font-weight: bolder;
+
+}
+.info1{
+  position:absolute;
+  bottom: 90px;
+  left: 43%;
+  font-family:caviar dreams;
+  color:#F5F5F5;
+}
+
+@media only screen and (max-width: 600px)  {
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+  }
+  .box{ 
+    position: relative;
+  }
+  .navbar {
+    padding: 4px;
+    background-color: rgba(0, 0, 0, 0.932); 
+    width: 100%;
+    margin-top: 0;
+    display: block;
+  }
+  .texts{
+    margin-left: 20px;
+    font-family:lemon milk light;
+    margin-left: 40px;
+  }
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left;
+    color: #F5F5F5;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 15.5px;
+    text-align: center;
+    
+  }
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: #C0B3A0;
+    color:#0F1626;
+    transform: translateX(-10px);
+    transition: 0.5s;
+  }
+  
+  /* Active/current link */
+  .navbar a.active {
+    color:  #FF433D;
+  }
+  /* Main column */
+.main {   
+  padding: 150px 200px 920px 200px;
+  background-image: url("bg1.jpg");
+  background-size: 100%;
+  color: #ff533D;
+  width: 100%;
+  position: relative;
+}
+
+.logo img{
+  position:absolute;
+}
+.Aboutme{
+  font-family:lemon milk light;
+  font-size: 40px;
+  position: absolute;
+  left: 20%;
+  top:0%;
+  font-weight: bolder;
+  color:#FF433D;
+}
+.image img{
+  position: absolute;
+  left:18%;
+  top:12%;
+  border-style: solid;
+  border-color:#E14658;
+  border-width: 4px;
+  width: 240px;
+  height: 320px;
+}
+.name{
+  font-size: 25px;
+  font-family:lemon milk light;
+  position: absolute;
+  top: 42%;
+  left: 5%;
+  color: #E14658;
+}
+.desc{
+  position: absolute;
+  top: 53%;
+  left: 5%;
+  font-family:caviar dreams;
+  color:#F5F5F5;
+  font-size: 14px;
+}
+.name2{
+  position:absolute;
+  top: 50%;
+  left: 42%;
+  float: right;
+  font-family: lemon milk light;
+  font-size: 25px;
+  color: #E14658;
+}
+.name21{
+  position:absolute;
+  top: 53%;
+  left: 40%;
+  float: right;
+  font-family: lemon milk light;
+  font-size: 25px;
+  color: #E14658;
+}
+.desc2{
+  position:absolute;
+  top: 60%;
+  left: 40%; 
+  font-family:caviar dreams;
+  color:#F5F5F5;
+  font-size: 14px;
+}
+.desc21{
+  position:absolute;
+  top: 63%;
+  left: 30%; 
+  font-family:caviar dreams;
+  color:#F5F5F5;
+  font-size: 14px;
+}
+.name3{
+  font-size: 28px;
+  font-family:lemon milk light;
+  position: absolute;
+  top: 61%;
+  left: 5%; 
+  font-weight: bold;
+  color: #E14658;
+  font-size: 25px;
+}
+.info{
+  position: absolute;
+  top: 67%;
+  left: 5%; 
+  color: #C0B3A0;
+  font-family: caviar dreams;
+  font-weight: bolder;
+  font-size: 14px;
+
+}
+.info1{
+  position:absolute;
+  top: 67%;
+  left: 15%;
+  font-family:caviar dreams;
+  color:#F5F5F5;
+  font-size: 14px;
+}
+}
+
+
+
+
+
